@@ -1,0 +1,41 @@
+@import '../../style/variables.scss';
+
+.navigation {
+    margin-top: 30px;
+    min-height: 100px;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__menu {
+        display: flex;
+        list-style-type: none;
+        justify-content: space-between;
+
+        &_item {
+            margin: 0 20px;
+            font-weight: 700;
+            font-size: 20px;
+            color: $brown-light;
+        }
+    }
+
+    &__country {
+        &_item {
+            font-weight: 700;
+            font-size: 20px;
+            color: $main-color;
+            position: relative;
+
+            &::before {
+                content: url(../../resourses/img/header/nav.svg);
+                position: absolute;
+                top: -5px;
+                left: -35px;
+            }
+        }
+    }
+}
